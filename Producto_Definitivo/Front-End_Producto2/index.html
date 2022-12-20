@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Producto 2</title>
+  </head>
+  <body class="bg-secondary">
+    
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-success rounded  tex-white" >
+        <h1 class="text-center bg-primary">Tabla Completa Grupo Cuatrimestre</h1>
+        <table id="tabla" class="table table-dark table-striped" >
+        </table>
+    </div>
+
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-success rounded">
+        <h1 class="text-center bg-primary">Tabla Usuario Grupo Cuatrimestre</h1>
+        <table id="tabla2" class="table table-dark table-striped" >
+        </table>
+
+        <div class="input-group mb-3">
+          <input id="F_ProgEd" type="text" class="form-control" placeholder="F_ProgEd" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"></span>
+        </div> 
+
+        <div class="input-group mb-3">
+          <input id="F_Grupo" type="text" class="form-control" placeholder="F_Grupo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"></span>
+        </div> 
+
+        <div class="input-group mb-3">
+          <input id="F_Cuatri" type="text" class="form-control" placeholder="F_Cuatri" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"></span>
+        </div> 
+
+        <div class="input-group mb-3">
+            <input id="Turno" type="text" class="form-control" placeholder="Turno" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div> 
+          
+          <div class="input-group mb-3">
+            <input id="Modalidad"type="text" class="form-control" placeholder="Modalidad" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>          
+
+          <div class="input-group mb-3">
+            <input id="Extra1" type="text" class="form-control" placeholder="Extra" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>  
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" onclick="insertarGrupo()">Insertar</button>
+          </div>
+    </div>
+
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-primary rounded">
+        <h1 class="text-center bg-success">Tabla Completa Positivo Alumno</h1>
+        <table id="tabla3" class="table table-dark table-striped" >
+        </table>
+    </div>
+
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-primary rounded">
+        <h1 class="text-center bg-success">Tabla Usuario Positivo Alumno</h1>
+        <table id="tabla4" class="table table-dark table-striped" >
+        </table>
+          <div class="input-group mb-3">
+            <input id="FechaConfirmado" type="date" class="form-control" placeholder="Fecha Confirmado" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div> 
+          
+          <div class="input-group mb-3">
+            <input id="Comprobacion" type="text" class="form-control" placeholder="Comprobacion" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>          
+
+          <div class="input-group mb-3">
+            <input id="Antecendentes" type="text" class="form-control" placeholder="Antecedentes" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>  
+
+          <div class="input-group mb-3">
+            <input id="Riesgo" type="text" class="form-control" placeholder="Riesgo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div> 
+          
+          <div class="input-group mb-3">
+            <input id="NumContagio"type="number" class="form-control" placeholder="Numeros de contagios" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>          
+
+          <div class="input-group mb-3">
+            <input id="Extra2" type="text" class="form-control" placeholder="Extra" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>  
+
+          <div class="input-group mb-3">
+            <input id="F_Alumno" type="text" class="form-control" placeholder="F_Alumno" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>  
+
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" onclick="insertarAlPositivo()">Insertar</button>
+          </div>
+    </div>
+ 
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-info rounded">
+        <h1 class="text-center bg-danger"> Completa Seguimiento Alumno</h1>
+        <table id="tabla5" class="table table-dark table-striped" >
+        </table>
+    </div>
+
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-info rounded">
+        <h1 class="text-center bg-danger">Tabla Usuario Seguimiento Alumno</h1>
+        <table id="tabla6" class="table table-dark table-striped" >
+        </table>
+
+       
+          
+        <div class="input-group mb-3">
+          <input id="F_Medico"type="number" class="form-control" placeholder="F_Medico" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2"></span>
+        </div> 
+
+          <div class="input-group mb-3">
+            <input id="F_PositivoAl" type="number" class="form-control" placeholder="F_PositivoAl" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div> 
+          
+          <div class="input-group mb-3">
+            <input id="Fecha" type="text" class="form-control" placeholder="Form_Comunica" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>          
+
+          <div class="input-group mb-3">
+            <input id="Form_Comunicativa"type="text" class="form-control" placeholder="Reporte" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>  
+
+          <div class="input-group mb-3">
+            <input id="Entrevista"type="text" class="form-control" placeholder="Entrevista" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div> 
+
+          <div class="input-group mb-3">
+            <input id="Reporte"type="text" class="form-control" placeholder="Reporte" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div> 
+          
+          <div class="input-group mb-3">
+            <input id="Extra3"type="text" class="form-control" placeholder="Extra" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>     
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" onclick="insertarSeguimiento()">Insertar</button>
+          </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="Scripts-Peticiones/FetchGET.js"></script>
+    <script src="Scripts-Peticiones/FetchPOST.js"></script>
+  </body>
+</html>

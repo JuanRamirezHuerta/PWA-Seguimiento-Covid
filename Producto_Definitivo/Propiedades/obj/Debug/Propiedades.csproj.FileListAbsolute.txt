@@ -1,0 +1,6 @@
+C:\Users\Juan\Desktop\Producto_Definitivo\Propiedades\bin\Debug\Propiedades.dll
+C:\Users\Juan\Desktop\Producto_Definitivo\Propiedades\bin\Debug\Propiedades.pdb
+C:\Users\Juan\Desktop\Producto_Definitivo\Propiedades\obj\Debug\Propiedades.csproj.AssemblyReference.cache
+C:\Users\Juan\Desktop\Producto_Definitivo\Propiedades\obj\Debug\Propiedades.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Desktop\Producto_Definitivo\Propiedades\obj\Debug\Propiedades.dll
+C:\Users\Juan\Desktop\Producto_Definitivo\Propiedades\obj\Debug\Propiedades.pdb
